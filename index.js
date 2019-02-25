@@ -1,1 +1,1 @@
-console.writeline("TEST");
+console.log("Loaded the shared models.");
