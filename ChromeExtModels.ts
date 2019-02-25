@@ -1,10 +1,8 @@
 export module ChromeExtModels {
-    export const ChromeStorageActionTypes = {
-        GetVideo: "Action_GetVideo",
-        ReturnVideo: "Action_ReturnVideo",
-        SetPreview: "Action_SetPreview",
-        StoreClipToCache: "Action_StoreClipToCache" // TODO: Danny Maybe we want some kind of a recent clip storage?
-    }
+    export const GetVideo: string = "Action_GetVideo"
+    export const ReturnVideo: string = "Action_ReturnVideo"
+    export const SetPreview: string = "Action_SetPreview"
+    export const  StoreClipToCache: string = "Action_StoreClipToCache"
 
     export class ChromeStorageRequestModel {
         action: string;
