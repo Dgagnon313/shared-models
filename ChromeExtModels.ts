@@ -1,11 +1,17 @@
-export module ChromeExtModels {
-    export const GetVideo: string = "Action_GetVideo"
-    export const ReturnVideo: string = "Action_ReturnVideo"
-    export const SetPreview: string = "Action_SetPreview"
-    export const  StoreClipToCache: string = "Action_StoreClipToCache"
-
-    export class ChromeStorageRequestModel {
+export module Models {
+    export class ChromeRequest {
         action: string;
-        payload: any; // TODO: Danny Add a real payload type
+        payload: Video;
+    }
+
+    export class Video {
+        public minutes: number;
+        public seconds: number;
+        public ms: number;
+    
+        public clipName: string;
+        public videoId: string;
+        public length: string;
+        public isPreviewing: boolean;
     }
 }
