@@ -33,13 +33,20 @@ export module Models {
     }
 
     export class ActionNames {
-        GetVideo: string = "Action_GetVideo";
-        GetVideoResponse: string = "Action_GetVideo_Reponse";
+        readonly GetVideo: string;
+        readonly GetVideoResponse: string;
+        readonly ReturnVideo: string;
+        readonly ReturnVideoResponse: string;
+        readonly SaveClip: string;
+        readonly SaveClipResponse: string;
 
-        ReturnVideo: string = "Action_ReturnVideo";
-        ReturnVideoResponse: string = "Action_ReturnVideo_Response";
-
-        SaveClip: string = "Action_StoreClipToCache";
-        SaveClipResponse: string = "Action_StoreClipToCache_Response";
+        constructor() {
+            this.GetVideo = "Action_GetVideo";
+            this.GetVideoResponse = "Action_GetVideo_Response";
+            this.ReturnVideo = "Action_ReturnVideo";
+            this.ReturnVideoResponse = "Action_ReturnVideo_Response";
+            this.SaveClip = "Action_SaveClip";
+            this.SaveClipResponse = "Action_SaveClip_Response";
+        }
     }
 }
